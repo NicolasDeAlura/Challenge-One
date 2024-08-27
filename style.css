@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.body{
+    margin: 0;
+    padding: 50px;
+    background-image: url(/Imagenes/code.png);
+}
+
+.Logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    /*margin-left: 180px;*/
+    align-items: center;
+}
+
+.text_area{
+    height: 400px;
+    border: none;
+    color: #000000;
+    margin-top: 30px;
+    padding: 20px;
+    text-transform: lowercase;  
+    background-color: #eaeded
+}
+
+::placeholder{ color: #000000;}
+  .text-area:focus{
+    outline: none;
+}
+
+.Mensaje{
+    background: #eaeded;
+    background-image: url("/Imagenes/Player9.jpg");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    margin-top: 20px;
+    padding-left: 20px;
+    position:relative;
+}
+.Mensaje:focus{
+    outline: none;
+}
+
+.Botones{
+    display: flex;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.Btn_Desencriptar{
+    background: white; 
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    color:#000000;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;   
+}
+.Btn_Desencriptar:hover{
+    background-color: #f1948a
+}
+
+.Btn_Encriptar{
+    background-color: #e74c3c;
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.Btn_Encriptar:hover{
+    background-color: #f1948a
+}
+
+.Informacion{
+    color: #000000;
+    font-size: 24px;
+    
+}
+
+.footer{
+    background-color: #e74c3c;
+    padding: 3px;
+    color:  white;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1200px){
+    
+    .Presentacion{
+        flex-direction: column;
+        padding: 5%;
+        
+    }
+    
+}
+
+@media (max-width: 800px){
+    .Botones{
+        flex-direction: column;
+        gap: 18px;
+        width: 50%;
+    }
+    .text_area{
+        width: 50%;
+    }
+    .Informacion{
+        padding: 2%;
+        width: 50%;
+    }
+    
+
+}
